@@ -1,4 +1,5 @@
 import re
+
 def word_frequency(sentences):
     wordcount_dict = {}
     reg = re.compile(r'\w+')
@@ -12,6 +13,7 @@ def word_frequency(sentences):
                 wordcount_dict[word] = 1    
     wordcount_dict = sorted(wordcount_dict.items(),key =lambda x:x[1],reverse=True)                    
     return wordcount_dict   
+    
 def check_query(value):
     if  value is not None:
         if value.isdigit():
