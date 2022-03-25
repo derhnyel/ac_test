@@ -89,7 +89,6 @@ class HackerNewsEngine():
                     results.append(api_response)
 
         return results        
-
     async def request(self,path):
         async with aiohttp.ClientSession() as session:
             async with session.get(self.url.format(path=path),headers = self.get_header()) as response:
@@ -119,8 +118,6 @@ class HackerNewsEngine():
                 if 'time' in api_response:
                     api_response['time'] = datetime.fromtimestamp(api_response['time']) #format items timestamp with datetime
                     return api_response
-
-
         except:        
             return None
             
