@@ -10,6 +10,7 @@ hackernews = engine.HackerNewsEngine()
 #fetch ids
 #check for cache/ db availablility
 #find items in new_items not in cache or db
+
 def crud_cachedb(key):
     fetched_ids = hackernews.get_story(key)
     cached_ids = cache.get(key)
@@ -45,6 +46,7 @@ async def async_dbwrite(items):
     coroutines = await asyncio.gather(*tasks)
     for coroutine in coroutines:
         await coroutine
+
 #write recent_items  to db  
 def write_db(recent_items):
     for item in recent_items:
@@ -54,17 +56,21 @@ def write_db(recent_items):
 def recentids(storedids,fetchedids):
     """Find uncommon elements in the lists"""  
     set_storedids,set_fetchedids = set(storedids),set(fetchedids) # this reduces the lookup time from O(n) to O(1)
+    
     #recent_ids = [id for id in fetchedids if id not in set_storedids] #list comprehension to find elements in list_2 not in list_1
+    
     recent_ids = list(set_fetchedids.difference(set_storedids))
     return recent_ids 
 
 def main(key):
     items = crud_cachedb(key)
+
     # loop = asyncio.new_event_loop()
     # asyncio.set_event_loop(loop) 
     # loop.run_until_complete(async_dbwrite(items))
     
     #loop = asyncio.get_event_loop()    
     #loop.run_until_complete(async_dbwrite(items))
+
     write_db(items)
                   
