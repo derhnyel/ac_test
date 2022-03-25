@@ -51,7 +51,10 @@ async def async_dbwrite(items):
 def write_db(recent_items):
     for item in recent_items:
         kwargs = dict(type=item['type'],score=item['score'],title =item['title'],time =item['time'])
-        Items.objects.create(id=item['id'],**kwargs)
+        try:
+            Items.objects.create(id=item['id'],**kwargs)
+        except: 
+            pass  
         
 def recentids(storedids,fetchedids):
     """Find uncommon elements in the lists"""  
