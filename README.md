@@ -69,7 +69,7 @@ You can also query the Api [http://localhost:8000/api?story=story&](http://local
 You can also query the Api [http://localhost:8000/api?day=day&](http://localhost:8000/api/?day=day) <restricted to integers> with a `GET` request and a query based on the number of days of which the item was created to return the result of word occurences from the stories of that day.
 - **GET?word**   
 You can also query the Api [http://localhost:8000/api?word=word&](http://localhost:8000/api/?word=word) <restricted to integers> with a `GET` request and a query based on the number of top word with the highest frequency. to be returned.
-- **GET?=score**   
+- **GET?score**   
 You can also query the Api [http://localhost:8000/api?score=score&](http://localhost:8000/api/?score=score) <restricted to integers> with a `GET` request and a query based on the items karma it return the highest word occurence in the title of the karma specified.
 
 #### NOTE
