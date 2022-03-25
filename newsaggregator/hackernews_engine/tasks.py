@@ -15,6 +15,7 @@ def crud_cachedb(key):
     fetched_ids = hackernews.get_story(key)
     cached_ids = cache.get(key)
     recent_ids = fetched_ids
+    print(fetched_ids)
     if cached_ids is not None:# set higher priority on cache
         recent_ids = recentids(cached_ids,fetched_ids)
         cache.set(key,fetched_ids)
