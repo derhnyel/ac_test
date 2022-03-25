@@ -3,7 +3,7 @@ def word_frequency(sentences):
     wordcount_dict = {}
     for sentence in sentences:
         for word in sentence.split():
-            if word in wordcount_dict and word.:
+            if word in wordcount_dict and word:
                 wordcount_dict[word]=wordcount_dict[word]+1
                 continue 
             wordcount_dict[word] = 1
