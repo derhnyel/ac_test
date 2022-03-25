@@ -60,9 +60,9 @@ containing JSON data.
 
 #### API Calls Locally
 
-- Interact with the rest_api from browser using [http://localhost:8000/api](http://localhost:8000/api)
+- Interact with the rest_api from browser using [http://localhost:8000/api?](http://localhost:8000/api?)
 - **GET** 
-Query the Api  [http://localhost:8000/api](http://localhost:8000/api) with a `GET` request why which ever query parameter
+Query the Api  [http://localhost:8000/api?](http://localhost:8000/api?) with a `GET` request why which ever query parameter
 - **GET?story**   
 You can also query the Api [http://localhost:8000/api?story=story&](http://localhost:8000/api/?story=story) <restricted to integers> with a `GET` request and a query based on the number of top stories to return the result of word occurences from those stories.
 - **GET?day**   
@@ -71,5 +71,11 @@ You can also query the Api [http://localhost:8000/api?day=day&](http://localhost
 You can also query the Api [http://localhost:8000/api?word=word&](http://localhost:8000/api/?word=word) <restricted to integers> with a `GET` request and a query based on the number of top word with the highest frequency. to be returned.
 - **GET?=score**   
 You can also query the Api [http://localhost:8000/api?score=score&](http://localhost:8000/api/?score=score) <restricted to integers> with a `GET` request and a query based on the items karma it return the highest word occurence in the title of the karma specified.
+
+#### NOTE
+    - The Query's can be combined with each other in any manner to get desired result. For Example To get the top 10 words from 25 stories you could use the url [http://localhost:8000/api?story=25&word=10](http://localhost:8000/api/?story=25&word=10).
+    - If you want to add the stories with > or = 10 karmas you could modify the url [http://localhost:8000/api?story=25&word=10&score=10](http://localhost:8000/api/?story=25&word=10&score=10).
+    - You could further extend tthe query to get the stories in the last 2 days . The url will be [http://localhost:8000/api?story=25&word=10&score=10&day=2](http://localhost:8000/api/?story=25&word=10&score=10&day=2).
+
 
 
