@@ -41,7 +41,7 @@
 
 #### Request Format
 
-- Interact with the restapi from your browser using this url format [http://localhost:8000/api?](http://localhost:8000/api?) 
+- Interact with the restapi from your browser using this url format [http://localhost:8000/api](http://localhost:8000/api) 
 
 - **story**   
 You can query the Api using this format [http://localhost:8000/api?story=your_story_query](http://localhost:8000/api/?story=your_story_query) `restricted your_story_query can only be integers` with story your query based on the number of top stories to be returned. This returns the result of word occurences in the titles from those top stories.
