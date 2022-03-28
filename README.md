@@ -27,7 +27,7 @@
 
 - Start server and run application with command `python manage.py runserver`
 
-- The app is built using `Django` so this command Runs the app in Development mode. Open [http://localhost:8000](http://localhost:8000) to view it in the browser. The page will reload if you make edit to the scripts. To turn this feature off use the "--noreload" `python manage.py runserver --noreload`
+- The app is built using Django so this command Runs the app in Development mode. Open [http://localhost:8000](http://localhost:8000) to view it in the browser. The page will reload if you make edit to the scripts. To turn this feature off use the "--noreload" `python manage.py runserver --noreload`
 
 #### NOTE
     At first, running the page takes a while(around 2minutes) to load since the database is empty and has to be populated.
