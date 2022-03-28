@@ -5,11 +5,11 @@
 
 - Check python version `python --version`
 
-- Set up Postgresql Server on your Computer and Get the service Running. 
+- Set up Postgresql Server on your Computer and Get the service Running. If you need help with that, head over to [https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database](https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database)
 
-- On Windows You can Download the PgAdmin Application [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)
+- On Windows You can Download the PgAdmin Application from [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)
  
-- Create a database with the name hackernewsdb. 
+- Create a postgre database with the name hackernewsdb. 
 
 - You could use any other name as your database name but remember to update the "DATABASE" variable in the django projects 'settings.py' file.
 
