@@ -15,9 +15,9 @@
 
 - Connect to the Postgres database.
 
-- A Virtual Machine was shipped with this project Activate on Windows with ,
+- Clone this repo `git clone git@github.com:derhnyel/ac_test.git` or Download the Repo to your Local directory.
 
-- Navigate into the project directory via your terminal (newsaggregator directory should be your root directory).
+- Navigate into the project directory via your terminal (newsaggregator directory should be your root directory). you could use command `cd  path_to_cloned_project/newsaggregator`
 
 - Install the requirements by typing the command  `pip install -r requirements.txt` in yout terminal
 
