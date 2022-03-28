@@ -44,13 +44,13 @@
 - Interact with the restapi from your browser using this url format [http://localhost:8000/api](http://localhost:8000/api) 
 
 - **story**   
-You can query the Api using this format [http://localhost:8000/api?story=your_story_query](http://localhost:8000/api/?story=your_story_query) `restricted your_story_query can only be integers` with story your query based on the number of top stories to be returned. This returns the result of word occurences in the titles from those top stories.
+You can query the Api using this format [http://localhost:8000/api?story=your_story_query](http://localhost:8000/api/?story=your_story_query) (`restricted your_story_query can only be integers`) with story your query based on the number of top stories to be returned. This returns the result of word occurences in the titles from those top stories.
 - **day**   
-You can query the Api using this format [http://localhost:8000/api?day=your_day_query](http://localhost:8000/api/?day=your_day_query) `your_day_query can only be integers` with your day query based on the number of days ago of which the item was created. This returns the result of word occurences from the top stories titles of that particular day.
+You can query the Api using this format [http://localhost:8000/api?day=your_day_query](http://localhost:8000/api/?day=your_day_query) (`your_day_query can only be integers`) with your day query based on the number of days ago of which the item was created. This returns the result of word occurences from the top stories titles of that particular day.
 - **word**   
-You can query the Api using this format [http://localhost:8000/api?word=your_word_query](http://localhost:8000/api/?word=your_word_query) `your_word_query can only be integers` with your word query. It return the number of words specified sorted by thier frequent occurence in the title in top stories.
+You can query the Api using this format [http://localhost:8000/api?word=your_word_query](http://localhost:8000/api/?word=your_word_query) (`your_word_query can only be integers`) with your word query. It return the number of words specified sorted by thier frequent occurence in the title in top stories.
 - **score**   
-You can query the Api using this format [http://localhost:8000/api?score=your_score_query](http://localhost:8000/api/?score=your_score_query) `your_score_query can only be integers` with a query based on the items karma. It returns the words with the highet word occurence in the title of top stories with the karma/score/rating specified.
+You can query the Api using this format [http://localhost:8000/api?score=your_score_query](http://localhost:8000/api/?score=your_score_query) (`your_score_query can only be integers`) with a query based on the items karma. It returns the words with the highet word occurence in the title of top stories with the karma/score/rating specified.
 
 #### NOTE
     - The Query's can be combined with each other using `&` in any manner to get desired result. 
